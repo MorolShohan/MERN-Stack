@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+
+        <label for="datepicker">Choose Date</label>
+        <input type="date" name="datepicker" id="datepicker">
+        <br>
+        <br>
+        <label for="selector1">Choose your Dish</label>
+        <select name="dishes" id="selector1">
+            <option value="maggi">Maggi</option>
+            <option value="pasta">Pasta</option>
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="sandwich">Sandwich</option>
+            <option value="salad">Salad</option>
+            <option value="soup">Soup</option>
+            <option value="sushi">Sushi</option>
+            <option value="tacos">Tacos</option>
+        </select>
+        <br>
+        <br>
+        <legend>Enter availability:</legend>
+         <input type="radio" id="op1" name="availability" value="full time">
+        <label for="op1">Full time</label>
+       <input type="radio" id="op2" name="availability" value="part time">
+        <label for="op2">Part time</label>
+        <br><br>
+        <input type="checkbox" id="check1" name="check1" value="agree">
+        <label for="check1">I agree to the terms and conditions</label><br>
+        <input type="checkbox" id="check2" name="check2" value="subscribe">
+        <label for="check2">Subscribe to newsletter</label>
+        <br><br>
+        <textarea name="textare1" id="textarea1">Enter Your complain</textarea>
+        <br>
+        <br>
+
+        <label for="file">File Upload</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf">
+        <br><hr>
+         <label for="points">Points:</label>
+  <input type="number" id="points" name="points" >
+  <br><hr>
+        <input type="submit" value="Submit">
+
+        </fieldset>
+        
+
+    </form>
+</body>
+</html>

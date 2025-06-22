@@ -1,0 +1,132 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.profile-img img {
+    border-radius: 10px;
+    max-width: 200px;
+    height: auto;
+}
+
+.info h1 {
+    font-size: 2em;
+    color: #111;
+}
+.info h2 {
+    font-size: 1.3em;
+    color: #666;
+    margin-bottom: 10px;
+}
+.info p {
+    margin-bottom: 5px;
+}
+
+section {
+    margin-top: 30px;
+}
+section h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+}
+
+.about {
+    margin-top: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skills li {
+    background: #0077cc;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.project {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #0077cc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #555;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+}
